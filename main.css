@@ -1,0 +1,95 @@
+#main-wrapper {
+    position: absolute;
+    top: 30px;
+    left: 30px; right: 30px;
+
+    height: 6000px;
+
+
+}
+#start {
+    height: calc(100vh  - 100px);
+}
+.shapes {
+    position: absolute;
+    top: 30px;
+    left: 30px; right: 30px;
+    height: calc(100vh  - 100px);
+
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+
+}
+.shapes > svg {
+    width: 100%;
+    height: auto;
+}
+#portfoliorect {
+    grid-area: 2 / 2 / 4 / 4;
+}
+#twotrianglesright {
+    grid-area: 4 / 4 / 5 / 6
+}
+#threelinesBLUE {
+    grid-area: 7 / 2 / 7 / 6;
+}
+#pink {
+    grid-area: 9 / 3 / 9 / 4;
+}
+#contactrect {
+    grid-area: 10 / 7 / 10 / 9;
+}
+#yellow {
+    grid-area: 7 / 7 / 8 / 8;
+}
+#black1 {
+    grid-area: 2 / 7 / 2 / 8;
+}
+#yellowsandwich {
+    grid-area: 3 / 10 / 4 / 12;
+}
+#pinksandwich {
+    grid-area: 8 / 10 / 9 / 12;
+}
+#twotrianglesleft {
+    grid-area: 2 / 13 / 4 / 15;
+}
+#headerTitle {
+    grid-area: 5 / 9 / 7 / 12; 
+}
+#black2 {
+    grid-area: 8 / 13 / 8 / 14;
+}
+#aboutrect {
+    grid-area: 5 / 13 / 6 / 15;
+}
+
+#aboutrect > text:hover, #portfoliorect > text:hover , #contactrect > text:hover  {
+    cursor: pointer;
+}
+
+#about-wrapper {
+    width: 100%;
+    height: 100%;
+}
+.textleft {
+    margin-top: 200px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'works img';
+}
+#works {
+    margin: auto auto auto 50px;
+    width: 450px;
+}
+#Website_design-_that_works {
+    min-width: 0;
+    width: auto;
+}
+#comfortingFood {
+    grid-area: img;
+    width: 100%;
+    margin: auto;
+}
